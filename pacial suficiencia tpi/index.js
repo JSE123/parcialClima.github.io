@@ -20,23 +20,29 @@ climaSanMIguel()
 
 
 function mostrarClimaUsulutan(res){
+    var info = ''
     if(res.weather[0].main == "Clear"){
-        var info =
+        info +=
         '<img src="imagenes/soleado.png" alt="">'+
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
         ' <p><b>Estado cimatico:</b> Soleado</p>'+
         ' <p><b>Descripcion:</b> Cielos despejados</p>'
 
     }
     else if(res.weather[0].main == "Rain"){
-        var info =
+        info =
         '<img src="imagenes/lluvioso.jog" alt="">'+
-        ' <p><b>Estado cimatico:</b> Despejado</p>'
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
+        ' <p><b>Estado cimatico:</b> lluvioso</p>'+
+        ' <p><b>Descripcion:</b> Lluvia</p>'
+
       
 
     }
     else if(res.weather[0].main == "Cloudy"){
-        var info =
+        info =
         '<img src="imagenes/nublado.jpg" alt="">'+
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
         ' <p><b>Estado cimatico:</b> Nublado</p>'+
         ' <p><b>Descripcion:</b> Cielos nublados</p>'
 
@@ -50,23 +56,28 @@ function mostrarClimaUsulutan(res){
     document.getElementById('contenedor').innerHTML = info
 }
 function mostrarClimaSanMiguel(res){
+    var info = ''
+    info +=   ' <p><b>Departamento:</b> '+res.name+'</p>'
     if(res.weather[0].main == "Clear"){
-        var info =
+        info +=
         '<img src="imagenes/soleado.png" alt="">'+
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
         ' <p><b>Estado cimatico:</b> Soleado</p>'+
         ' <p><b>Descripcion:</b> Cielos despejados</p>'
         
     }
     else if(res.weather[0].main == "Rain"){
-        var info =
+        info =
         '<img src="imagenes/lluvioso.jpg" alt="">'+
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
         ' <p><b>Estado cimatico:</b> LLuvioso</p>'+
         ' <p><b>Descripcion:</b> Lluvia</p>'
         
     }
     else if(res.weather[0].main == "Cloudy"){
-        var info =
+        info =
         '<img src="imagenes/nublado.jpg" alt="">'+
+        ' <p><b>Departamento:</b> '+res.name+'</p>'+
         ' <p><b>Estado cimatico:</b> Nublado</p>'+
         ' <p><b>Descripcion:</b> Cielos nublados</p>'
 
