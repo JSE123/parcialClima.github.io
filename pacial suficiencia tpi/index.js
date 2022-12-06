@@ -92,9 +92,4 @@ function mostrarClimaSanMiguel(res){
 
 
 
-async function clima(){
-    let response = await axios('https://api.openweathermap.org/data/2.5/weather?lat=-37.46973&lon=-72.35366&appid=d596455e943e42aa0788164ccc1a6afa');
-    console.log(response.data)
-}
 
-clima()
