@@ -57,7 +57,6 @@ function mostrarClimaUsulutan(res){
 }
 function mostrarClimaSanMiguel(res){
     var info = ''
-    info +=   ' <p><b>Departamento:</b> '+res.name+'</p>'
     if(res.weather[0].main == "Clear"){
         info +=
         '<img src="imagenes/soleado.png" alt="">'+
